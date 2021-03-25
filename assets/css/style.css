@@ -70,12 +70,13 @@
     color: #f00;
 }
 .navbar form a{
+    position: relative;
     font-size: 24px;
     color: #fff;
-    position: relative;
+    transition: all 0.5s ease-in-out;
 }
-.btn-cart {
-
+.navbar form a:hover{
+    color: #f00;
 }
 .navbar .badge{
     position: absolute;
@@ -84,6 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff !important;
     background: #f00;
     border-radius: 50%;
     width: 20px;
@@ -112,7 +114,13 @@
     object-fit: cover;
     object-position: center;
 }
-
+.carousel-control-next-icon {
+    background-image: url(../images/chevron-right-24.png);
+}
+.carousel-control-prev-icon {
+    background-image: url(../images/chevron-right-24.png);
+    transform: rotate(180deg);
+}
 /* Dropdowns*/
 .dropdown:hover>.dropdown-menu, .dropdown-mega:hover .dropdown-menu,  .submenu-item:hover>.dropdown-menu {
     display: block;
@@ -350,7 +358,12 @@ ul.categories-list .category-title i{
     border:none;
     border-bottom: 3px solid #f00;
 }
+.nav-tabs .nav-link:hover {
+    border: none;
+    border-bottom: 3px solid #f00;
+}
 footer{
+    color: #fff;
     background: #000;
     padding-top: 40px;
 }
@@ -388,8 +401,57 @@ footer .footer-list li a{
 footer .footer-list li a:hover{
     color: #f00;
 }
+.tel-num a{
+    color: #f00;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none !important;
+}
 footer .copyrights{
     color: #fff;
     background: #f00;
     padding: 10px 0;
+}
+
+/* Socials*/
+.socials{
+    display: block;
+    margin: 20px auto;
+}
+.socials span {
+    display: inline-block !important;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #000;
+    background: #f00;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+}
+
+.socials span:hover{
+    transform: rotate(360deg);
+    color: #fff !important;
+}
+.socials .fa-facebook:hover{
+    background: #4267B2 !important;
+}
+.socials .fa-instagram:hover{
+    background: linear-gradient(to left top, #fd5949, #d6249f, #285AEB );
+}
+.socials .fa-twitter:hover{
+    background: #55acee !important;
+}
+.socials .fa-linkedin:hover{
+    background: #0077b5 !important;
+}
+.socials .fa-youtube:hover{
+    background: #f00 !important;
+}
+.socials .fa-snapchat-ghost:hover{
+    background: #fffc00 !important;
+    color: #000 !important;
 }
